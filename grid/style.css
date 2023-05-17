@@ -1,0 +1,94 @@
+
+
+html,body {height:100%;}
+body {
+	margin:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#loadingDiv, #robotDiv {
+    display: none;
+}
+
+.captcha {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+
+#captchaDiv {
+    width: 310px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#topCaptcha {
+    border: 1px solid rgb(215, 215, 215);
+    padding: 4px;
+}
+
+#instructions {
+    color: white;
+    width: 300px;
+    height: 80px;
+    padding: 12px;
+    margin-bottom: 6px;
+}
+
+#verify {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 310px;
+    border: 1px solid rgb(215, 215, 215);
+    border-top: none;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+
+
+#verifyBtn {
+    border-radius: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    position: relative;
+  }
+  
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label {
+    display: block;
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    background-size: cover;
+    border: 2px solid #f2f2f2;
+    box-sizing: border-box;
+  }
+  
+  .checkbox:checked + label {
+    /* background-color: #00ff00; */
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
