@@ -1,6 +1,6 @@
 let checkboxes;
 
-let pablo = ["six_packs", "bbq_sauce", "mismatching_cars", "chicken", "dog piss", "tie_dye", "garage_doors", "undercuts", "hats", "hdmi_ports", "lattes", "scarves", "rainbow_sheen", "spuds", "trash_bags", "watches"]
+let pablo = ["six_packs", "bbq_sauce", "mismatching_cars", "chicken", "dog piss", "tie_dye", "garage_doors", "undercuts", "canned_Purina", "hdmi_ports", "lattes", "scarves", "rainbow_sheen", "spuds", "trash_bags", "watches"]
 let answers = [
     { name: "motorcycles", text: "motorcycles", correct: [0, 1, 2, 3] },
     { name: "apples", text: "apples", correct: [0, 3, 4, 5, 7, 8] },
