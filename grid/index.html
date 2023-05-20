@@ -21,12 +21,18 @@
 
     <main role="main" class="container">
         <div class="captcha">
-            <div id="loadingDiv" class="text text-center">You're not a robot... ENTER</div>
-            <div id="robotDiv" class="text text-center">You're a robot... DENIED</div>
+            <div id="loadingDiv" class="text text-center">
+                <h4>You're not a robot.</h4>
+                <button class="btn btn-success btn-lg">ENTER</button>
+            </div>
+            <div id="robotDiv" class="text text-center">
+                 <h4>Are you human??</h4>
+                <button class="btn btn-danger btn-lg">DENIED</button>
+            </div>
             <div id="captchaDiv">
                 <div id="topCaptcha">
                     <div id="instructions" class="bg-primary">Select all the images with <strong><span
-                                id="instructionText">motorcycles</span></strong></div>
+                                id="instructionText">motorcycles</span></strong>.</div>
                     <div class="grid-container">
                         <div class="grid-item">
                             <input type="checkbox" id="checkbox1" class="checkbox">
@@ -68,7 +74,11 @@
                 </div>
 
                 <div id="verify">
-                    <div></div>
+                    <div class="logo">
+                        <!-- <img src="assets/recaptcha.png" /> -->
+                        <p>reCAPTCHA</p>
+                        <small>Privacy - Terms</small>
+                    </div>
                     <div></div>
                     <div><button id="verifyBtn" class="btn btn-primary" onclick="verifyClicks()">VERIFY</button></div>
                 </div>
