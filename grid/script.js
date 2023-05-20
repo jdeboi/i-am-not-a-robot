@@ -51,6 +51,10 @@ function verifyClicks() {
     setTimeout(() => location.reload(), 3500);
 }
 
+function reloadPage() {
+    location.reload();
+}
+
 function didWin() {
     let correctAns = answers[currentAnswerNum].correct;
     let totalChecked = 0;
