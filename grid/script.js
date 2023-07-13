@@ -1,6 +1,6 @@
 let checkboxes;
 
-let pablo = ["six_packs", "bbq_sauce", "mismatching_cars", "chicken", "dog piss", "tie_dye", "garage_doors", "undercuts", "canned_Purina", "hdmi_ports", "lattes", "scarves", "rainbow_sheen", "spuds", "trash_bags", "watches"]
+let pablo = ["six_packs", "bbq_sauce", "mismatching_cars", "chicken", "dog_piss", "tie_dye", "garage_doors", "undercuts", "canned_Purina", "hdmi_ports", "lattes", "scarves", "rainbow_sheen", "spuds", "trash_bags", "watches"]
 let answers = [
     { name: "motorcycles", text: "motorcycles", correct: [0, 1, 2, 3] },
     { name: "apples", text: "apples", correct: [0, 3, 4, 5, 7, 8] },
@@ -43,17 +43,26 @@ function verifyClicks() {
 
     if (didWin2()) {
         document.getElementById("loadingDiv").style.display = "block";
+        setTimeout(() => homePage(), 3500);
 
     }
     else {
         document.getElementById("robotDiv").style.display = "block";
+        setTimeout(() => reloadPage(), 3500);
     }
-    setTimeout(() => location.reload(), 3500);
+    
 }
 
 function reloadPage() {
-    location.reload();
+    // location.reload();
+    homePage();
 }
+
+
+function homePage() {
+    window.location.href="../index.html"
+}
+
 
 function didWin() {
     let correctAns = answers[currentAnswerNum].correct;
